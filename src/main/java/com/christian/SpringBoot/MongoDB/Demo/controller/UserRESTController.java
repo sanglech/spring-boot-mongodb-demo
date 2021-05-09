@@ -11,13 +11,13 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/user")
-public class UserController {
+public class UserRESTController {
 
     private final Logger LOG = LoggerFactory.getLogger(getClass());
 
     private final UserRepository userRepository;
 
-    public UserController(UserRepository userRepository) {
+    public UserRESTController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
