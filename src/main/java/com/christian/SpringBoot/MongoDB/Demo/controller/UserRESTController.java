@@ -1,7 +1,7 @@
 package com.christian.SpringBoot.MongoDB.Demo.controller;
 
 import com.christian.SpringBoot.MongoDB.Demo.document.User;
-import com.christian.SpringBoot.MongoDB.Demo.repository.UserRepository;
+import com.christian.SpringBoot.MongoDB.Demo.repository.primary.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

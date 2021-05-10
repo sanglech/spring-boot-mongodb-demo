@@ -1,4 +1,4 @@
-package com.christian.SpringBoot.MongoDB.Demo.repository;
+package com.christian.SpringBoot.MongoDB.Demo.repository.primary;
 
 import com.christian.SpringBoot.MongoDB.Demo.document.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
