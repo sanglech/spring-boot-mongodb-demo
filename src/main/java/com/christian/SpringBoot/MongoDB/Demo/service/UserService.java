@@ -1,10 +1,10 @@
-package com.christian.SpringBoot.MongoDB.Demo.dal;
+package com.christian.SpringBoot.MongoDB.Demo.service;
 
 import com.christian.SpringBoot.MongoDB.Demo.document.User;
 
 import java.util.List;
 
-public interface UserDAL {
+public interface UserService {
 
     List<User> getAllUsers();
 

@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-@Document
+@Document(collection="users")
 public class User {
     @Id
     private String userId;
@@ -19,7 +19,11 @@ public class User {
 
     }
 
-
+    public User(String name, Date creationDate, Map<String, String> userSettings) {
+        this.name = name;
+        this.creationDate = creationDate;
+        this.userSettings = userSettings;
+    }
 
     public String getUserId() {
         return userId;

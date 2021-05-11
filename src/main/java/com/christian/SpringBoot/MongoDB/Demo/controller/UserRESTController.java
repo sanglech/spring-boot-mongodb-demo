@@ -4,6 +4,7 @@ import com.christian.SpringBoot.MongoDB.Demo.document.User;
 import com.christian.SpringBoot.MongoDB.Demo.repository.primary.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public class UserRESTController {
 
     private final Logger LOG = LoggerFactory.getLogger(getClass());
 
+    @Autowired
     private final UserRepository userRepository;
 
     public UserRESTController(UserRepository userRepository) {
